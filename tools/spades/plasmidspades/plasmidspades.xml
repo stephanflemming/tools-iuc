@@ -1,0 +1,47 @@
+<tool id="plasmidspades" name="plasmidSPAdes" version="@TOOL_VERSION@+galaxy2">
+    <description></description>
+    
+    <macros>
+        <import>macros.xml</import>
+    </macros>
+
+    <expand macro="requirements" />
+
+    <command detect_errors="exit_code"><![CDATA[
+    ]]></command>
+
+    <inputs>
+
+        <expand macro="input_required" />
+
+        <section name="advanced" title="Advanced Options" expanded="false">            
+            <expand macro="input_advanced" />
+        </section>
+    </inputs>
+
+    <outputs>
+   </outputs>
+
+    <tests>
+        <!-- #1: strelka: somatic workflow demo -->
+        <!-- #2: with advanced parameters -->
+        <!-- #3: with config file parameters -->
+    </tests>
+    <help><![CDATA[
+What it does
+============
+@HELP_HEADER@
+
+Parameter
+=========
+
+@HELP_PARAMETER_REQUIRED@
+
+Advanced
+--------
+
+@HELP_PARAMETER_ADVANCED@
+
+    ]]></help>
+    <expand macro="citations" />
+</tool>

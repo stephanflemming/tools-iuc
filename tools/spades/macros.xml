@@ -1,6 +1,28 @@
 <macros>
-    <token name="@TOOL_VERSION@">3.12.0</token>
-    <token name="@INTYPES@">
-        fasta,fasta.gz,fastq,fastq.gz,fastqsanger,fastqsanger.gz
+    <token name="@TOOL_VERSION@">3.13.1</token>
+    
+	<token name="@DESCRIPTION@">...</token>
+
+    <xml name="requirements">
+        <requirements>
+            <requirement type="package" version="@TOOL_VERSION@">spades</requirement>
+            <yield/>
+        </requirements>
+    </xml>
+
+	<xml name="citations">
+        <citations>
+            <citation type="doi"></citation>
+        </citations>
+    </xml>
+
+    <token name="@HELP_HEADER@">
     </token>
+
+    <token name="@HELP_PARAMETER_REQUIRED@">
+    </token>
+
+    <token name="@HELP_PARAMETER_ADVANCED@">
+    </token>
+
 </macros>
